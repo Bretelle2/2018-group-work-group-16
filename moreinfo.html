@@ -1,0 +1,139 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+  <script src="moreinfo.js"></script>
+  <style>
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    background-color: black;
+    max-width:100%;
+    min-width:100%;
+}
+
+
+  @font-face {
+    font-family: bold;
+    src: url(font/GTAmericaMono-Bold.otf);
+  }
+  @font-face {
+      font-family: thin;
+    src: url(font/GTAmericaMono-Thin.otf);
+  }
+  @font-face {
+      font-family: polya;
+    src: url(font/polya.otf);
+  }
+
+
+  #titolo {
+    font-family: polya;
+    font-size: 15vh;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    -webkit-transform: translateY(-5%);
+    -moz-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -o-transform: translateY( -5%);
+    transform: translateY(-5%);
+
+  }
+
+
+  #testi{
+  font-size: 2vh;
+  font-family: thin;
+  color: white;
+  text-align: left;
+  position:absolute;
+  line-height: 4vh;
+  top:40%;
+  left:20%;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY( -5%);
+  transform: translateY(-5%);
+
+  }
+
+
+    #home {
+      font-family: bold;
+      font-size: 2vh;
+      color: white;
+      position: absolute;
+      top: 79%;
+      -ms-transform: translateY(-80%);
+      transform: translateY(-80%);
+      left: 20%;
+      padding-left: 2vh;
+      padding-right: 2vh;
+      border: 1px solid white;
+      text-align: center;
+      height:4vh;
+      text-align: center;
+      line-height: 4vh;
+      }
+
+
+
+
+    @media only screen and (max-width: 910px) {
+        #home {
+           top: 83%;
+          }
+        }
+        @media only screen and (max-width: 780px) {
+            #home {
+               top: 87%;
+              }
+            }
+
+            @media only screen and (max-width: 600px) {
+                #home {
+                   top: 100%;
+                  }
+                }
+                @media only screen and (max-width: 400px) {
+                    #home {
+                       top: 115%;
+                      }
+                    }
+
+    a:link {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:visited {
+        color: white;
+        cursor: pointer;
+    }
+
+
+
+</style>
+</head>
+
+<body id ="body">
+<div id="home"> <a href ="home.html">HOME</a> </div>
+<div id="titolo">HEARTBEAT</div>
+<div id="testi">Heartbeat is an interactive page developed by Andrini Valerio, Desogus Luca and Varesano Greta.<br>
+
+The main purpose is to show all the passages of the first aid in short time:<br> it involves making common sense decisions in best interest of an injured person.<br><br>But how difficult it can be?<br> Am I able to provide a proper assistance to a person who needs help?<br> Or is it better for him/her and me to wait for the ambulance to come?
+</body>
+
+
+</body>
+</html>

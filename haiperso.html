@@ -1,0 +1,232 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+  <script language="javascript" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/p5.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+  <script language="javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.sound.js"></script>
+  <script src="haiperso.js"></script>
+  <style>
+
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+
+    background-color: black;
+    max-width:100%;
+    min-width:100%;
+}
+
+
+  @font-face {
+    font-family: bold;
+    src: url(font/GTAmericaMono-Bold.otf);
+  }
+  @font-face {
+      font-family: thin;
+    src: url(font/GTAmericaMono-Thin.otf);
+  }
+  @font-face {
+      font-family: polya;
+    src: url(font/polya.otf);
+  }
+
+
+  #titolo {
+    font-family: polya;
+    font-size: 15vh;
+    color: white;
+    margin: 0;
+    position: absolute;
+    top: 15%;
+    left: 20%;
+    -webkit-transform: translateY(-5%);
+    -moz-transform: translateY(-5%);
+    -ms-transform: translateY(-5%);
+    -o-transform: translateY( -5%);
+    transform: translateY(-5%);
+
+  }
+
+  @media only screen and (max-width: 900px) {
+    #titolo {
+  font-size: 9vh;
+    }
+  }
+
+  @media only screen and (max-width: 510px) {
+  #titolo {
+  top: 10%;
+    }
+  }
+  #testi{
+  font-size: 2vh;
+  font-family: thin;
+  color: white;
+  text-align: left;
+  position:absolute;
+  line-height: 4vh;
+  top:40%;
+  left:20%;
+  -webkit-transform: translateY(-5%);
+  -moz-transform: translateY(-5%);
+  -ms-transform: translateY(-5%);
+  -o-transform: translateY( -5%);
+  transform: translateY(-5%);
+
+  }
+
+
+  #restart {
+    font-family: bold;
+    font-size: 2vh;
+    color: white;
+
+    position: absolute;
+    top: 83%;
+    -ms-transform: translateY(-80%);
+    transform: translateY(-80%);
+    left: 20%;
+    line-height: 4vh;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    border: 1px solid white;
+    text-align: center;
+    height:4vh;
+}
+
+    #home {
+      font-family: bold;
+      font-size: 2vh;
+      color: white;
+      position: absolute;
+      top: 83%;
+      -ms-transform: translateY(-80%);
+      transform: translateY(-80%);
+      left: 30%;
+      padding-left: 2vh;
+      padding-right: 2vh;
+      border: 1px solid white;
+      text-align: center;
+      height:4vh;
+      text-align: center;
+      line-height: 4vh;
+      }
+
+
+
+    a:link {
+        color: white;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    a:visited {
+        color: white;
+        cursor: pointer;
+    }
+
+    .blink_me {
+      animation: blinker 1.5s linear infinite;
+    }
+
+    @keyframes blinker {
+      50% {
+        opacity: 0.2;
+      }
+    }
+
+
+
+          @media only screen and (max-width: 1080px) {
+            #home {
+              top: 93%;
+              left: 20%;
+            }
+          }
+
+
+
+          @media only screen and (max-width: 920px) {
+            #home {
+              top: 98%;
+
+            }
+          }
+
+          @media only screen and (max-width: 920px) {
+            #restart {
+              top: 88%;
+
+            }
+          }
+
+          @media only screen and (max-width: 900px) {
+            #home {
+              top: 103%;
+
+            }
+          }
+
+          @media only screen and (max-width: 900px) {
+            #restart {
+              top: 93%;
+
+            }
+          }
+
+          @media only screen and (max-width: 830px) {
+            #home {
+              top: 110%;
+
+            }
+          }
+
+          @media only screen and (max-width: 830px) {
+            #restart {
+              top: 100%;
+
+            }
+          }
+
+          @media only screen and (max-width: 620px) {
+            #home {
+              top: 120%;
+
+            }
+          }
+
+          @media only screen and (max-width: 620px) {
+            #restart {
+              top: 110%;
+
+            }
+          }
+
+
+          @media only screen and (max-width: 435px) {
+            #home {
+              top: 133%;
+              left: 20%;
+            }
+          }
+
+          @media only screen and (max-width: 435px) {
+            #restart {
+              top: 123%;
+              left: 20%;
+
+            }
+          }
+
+</style>
+</head>
+
+<body id ="body">
+<div id="titolo">WATCH OUT!</div>
+<div id="home"> <a href ="home.html">HOME</a> </div>
+<div id="restart"> <div class="blink_me"> <a href ="pagina1.html">RESTART</a> </div></div>
+<div id="testi"><span style="font-family:bold">YOU MADE IT EVEN WORSE!</span><br><br>The purpose of the first aid is to help the person before emergency personnel come.<br> It’s has nothing to do with hurting more that person who’s asking for help —<br> remember to not provide aid if the person involved doesn’t want to get it.
+<br><br><span style="font-family:bold">If you are in panic or you don’t have enough skills to do that, avoid random attemps.</span><br><br>But luckily for you, this is just an interactive page though, so feel free to </div>
+</body>
+</html>
